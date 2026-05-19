@@ -33,6 +33,9 @@
 :root {
   --gap-max: calc(var(--gap-margin) + var(--gap-padding));
 }
+body {
+  font-family: "Times New Roman", Times, system-ui, "Microsoft Yahei", "Segoe UI", Arial, sans-serif !important;
+}
 :root {
   --hue: 192deg;
   --sat: 98%;
