@@ -16,7 +16,7 @@
 
         cards.forEach((card) => {
           const categories = card.dataset.documentCategory.split(/\s+/)
-          const isVisible = selectedFilter === 'all' || categories.includes(selectedFilter)
+          const isVisible = categories.includes(selectedFilter)
           card.classList.toggle('is-hidden', !isVisible)
         })
       }
@@ -25,7 +25,9 @@
         button.addEventListener('click', () => applyFilter(button.dataset.documentFilter))
       })
 
-      applyFilter('all')
+      const initialFilter = showcase.querySelector('[data-document-filter].active')?.dataset.documentFilter
+        || filters[0]?.dataset.documentFilter
+      if (initialFilter) applyFilter(initialFilter)
     })
   }
 

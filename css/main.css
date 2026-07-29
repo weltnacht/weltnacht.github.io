@@ -36,6 +36,18 @@
 body {
   font-family: "Times New Roman", Times, FangSong, "仿宋", STFangsong, serif !important;
 }
+.site-statistics {
+  margin-top: 0.2rem;
+  line-height: 1.75;
+}
+.site-statistics #busuanzi_container_site_pv {
+  margin-right: 0.75rem;
+}
+.article.banner.compact .bg + .content {
+  min-height: 169px;
+  height: 169px;
+  aspect-ratio: unset;
+}
 .document-showcase {
   margin: 0 0 2rem;
 }
